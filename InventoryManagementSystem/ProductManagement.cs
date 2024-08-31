@@ -40,6 +40,7 @@ namespace InventoryManagementSystem
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
+			//check the Validation
 			if (!ValidateForm())
 			{
 				MessageBox.Show("Please fill out all fields correctly.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);

@@ -128,6 +128,7 @@ namespace InventoryManagementSystem
 		}
 		private bool ValidateForm()
 		{
+			// to validate the form 
 			if (productList.SelectedIndex == -1 || string.IsNullOrEmpty(QuantityText.Text) || !int.TryParse(QuantityText.Text, out int quantity) || quantity <= 0)
 			{
 				return false;
@@ -136,6 +137,6 @@ namespace InventoryManagementSystem
 			return true;
 		}
 
-
+		
 	}
 }
